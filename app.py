@@ -44,7 +44,7 @@ def load_questions():
 @st.cache_data(ttl=60)
 def load_authorized_emails():
     # LINK_DO_SEU_CSV_PUBLICO_DA_ABA_USUARIOS_DO_GOOGLE_SHEETS
-    csv_url_users = "https://docs.google.com/spreadsheets/d/e/2PACX-1vRBUqPZ49NRGhslCeQ377Ox-5bTzRhDIljonfh_jHYr4Q3YXcs2PI1HuQV9SS4GuNaY3eWEOwSk-DE6/pub?output=csv" # <-- VOCÊ PRECISA MUDAR ESTE LINK!
+    csv_url_users = "https://docs.google.com/spreadsheets/d/e/2PACX-1vRBUqPZ49NRGhslCeQ377Ox-5bTzRhDIljonfh_jHYr4Q3YXcs2PI1HuQV9SS4GuNaY3eWEOwSk-DE6/pub?gid=1423529108&single=true&output=csv" # <-- VOCÊ PRECISA MUDAR ESTE LINK!
     try:
         df_users = pd.read_csv(csv_url_users)
         if 'email' in df_users.columns:
