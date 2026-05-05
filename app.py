@@ -61,8 +61,8 @@ authorized_emails = load_authorized_emails()
 
 # --- Função de Login ---
 def login_page():
-    st.title("🚀 Portal do Quiz Interativo")
-    st.markdown("### Identifique-se para acessar os exercícios.")
+    st.title("Questões Odontologia Legal 🚀")
+    st.markdown("### Utilize seu email para login.")
 
     with st.form("login_form"):
         email = st.text_input("Seu e-mail cadastrado:").strip().lower()
